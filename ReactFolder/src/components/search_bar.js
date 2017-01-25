@@ -20,25 +20,29 @@ class SearchBar extends Component {
 
   onFormSubmit(event) {
     event.preventDefault();
-    
+
     this.props.fetchProducts(this.state.search);
     this.setState({ search: "" });
   }
 
   render() {
     return (
-      <div className="row">
-         <form onSubmit={this.onFormSubmit}>
-           <div className="col s10">
-             <input
-               placeholder="What are you looking for?"
-               value = {this.state.search}
-               onChange = {this.onInputChange} />
-           </div>
-           <div className="col s2">
-             <input type="submit"/>
-           </div>
-         </form>
+      <div>
+        <div className="row">
+           <form className="customSearchForm" onSubmit={this.onFormSubmit}>
+             <div className="col s10">
+               <input
+                 placeholder="What are you looking for?"
+                 value = {this.state.search}
+                 onChange = {this.onInputChange} />
+             </div>
+             <div className="col s2">
+               {/* <input type="submit"/> */}
+               <input className="searchIcon" type="image" src="../../images/search_icon.png" alt="Submit"/>
+
+             </div>
+           </form>
+         </div>
        </div>
     )
   };

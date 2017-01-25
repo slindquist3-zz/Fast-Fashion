@@ -8,8 +8,8 @@ export default class Columns extends Component {
     return (
 
       <div className="row">
-          <div className="col s9 push-s3"><span className="flow-text">This div is where the store columns go. All the way to here.</span></div>
-          <div className="col s3 pull-s9"><span className="flow-text">This div is where the cart column goes.</span></div>
+          <div className="col s8 push-s4"><span className="flow-text">This div is where the store columns go. All the way to here.</span></div>
+          <div className="col s4 pull-s8"><span className="flow-text">This div is where the cart column goes.</span></div>
           <Cart />
           <PriceColumn />
         </div>

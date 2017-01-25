@@ -1,0 +1,29 @@
+.customSearchForm {
+  font-size: 2em;
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+   font-size: 2em;
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-size: 2em;
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-size: 2em;
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   font-size: 2em;
+   text-align: center;
+}
+
+.searchIcon {
+  height: 36%;
+  width: 36%;
+}

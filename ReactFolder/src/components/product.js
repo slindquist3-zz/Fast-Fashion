@@ -7,7 +7,7 @@ const Product = () => {
 
   //how to make this Component reusable?
   return (
-    <div className="row">
+    <div>
       this is a product
     </div>
 

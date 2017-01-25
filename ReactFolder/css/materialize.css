@@ -3,6 +3,8 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -8541,8 +8543,4 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em;
   }
-}
-
-.customTitle {
-  font-family: 'Lobster', cursive;
 }

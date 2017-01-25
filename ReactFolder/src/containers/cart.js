@@ -8,7 +8,7 @@ export default class Cart extends Component {
     return (
 
       <div className="row">
-        <div className="col s3">
+        <div className="col s4">
           This is your cart
           <Product />
         </div>
