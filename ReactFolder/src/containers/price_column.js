@@ -22,7 +22,6 @@ class PriceColumn extends Component {
 
     return (
         <div>{items}</div>
-
     )
   }
 
@@ -38,7 +37,6 @@ class PriceColumn extends Component {
   }
 
 }
-
 
 function mapStateToProps({products}) {
   return {products};

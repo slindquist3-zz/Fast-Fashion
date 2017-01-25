@@ -1,4 +1,3 @@
-// cart is 1-3
 import React, { Component } from 'react'
 
 import Product from '../components/product'
@@ -16,4 +15,3 @@ export default class Cart extends Component {
     )
   }
 }
-//columns occupy 3 - 12

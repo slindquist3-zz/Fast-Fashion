@@ -37,9 +37,7 @@ class SearchBar extends Component {
                  onChange = {this.onInputChange} />
              </div>
              <div className="col s2">
-               {/* <input type="submit"/> */}
                <input className="searchIcon" type="image" src="../../images/search_icon.png" alt="Submit"/>
-
              </div>
            </form>
          </div>

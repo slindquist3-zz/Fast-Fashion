@@ -16,4 +16,3 @@ export default class Columns extends Component {
     )
   }
 }
-//columns occupy 3 - 12
