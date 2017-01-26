@@ -6,15 +6,19 @@ class PriceColumn extends Component {
   renderProducts(products) {
 
     var list = products.data.map(function(product) {
-      return product.keyword
+      return product
     })
 
     var items = list.map(function(item) {
       return (
         <ul>
           <li>
-            {item}
+            {item.keyword}
           </li>
+          <li>
+            ${item.price}
+          </li>
+          <img src={item.image_url} />
         </ul>
       )
     })
