@@ -31,12 +31,11 @@ class PriceColumn extends Component {
 
   render() {
     return(
-      <div className="row">
+
         <div className="col s4 push-s4">
         lower-priced products
           {this.props.products.map(this.renderProducts)}
         </div>
-      </div>
     )
   }
 

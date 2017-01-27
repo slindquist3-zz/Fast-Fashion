@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SearchBar from '../components/search_bar'
 import Columns from './columns'
-// import Login from './login'
 
 
 export default class App extends Component {
@@ -16,7 +15,6 @@ export default class App extends Component {
       <div>
         <SearchBar />
         <Columns products= {this.state.products}/>
-        {/* <Login /> */}
       </div>
     );
   }
