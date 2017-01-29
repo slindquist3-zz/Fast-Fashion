@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS } from '../actions/index'
+import { FETCH_PRODUCTS } from '../actions/fetchProducts'
 
 export default function(state = [], action) {
   switch(action.type) {

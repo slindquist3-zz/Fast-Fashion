@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SearchBar from '../components/search_bar'
 import Columns from './columns'
+import CreateUser from '../components/create_user'
 
 
 export default class App extends Component {
@@ -15,6 +16,7 @@ export default class App extends Component {
       <div>
         <SearchBar />
         <Columns products= {this.state.products}/>
+        <CreateUser />
       </div>
     );
   }
