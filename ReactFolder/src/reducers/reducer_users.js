@@ -1,8 +1,7 @@
-export default function currentUser(state = {id: null, name: null, userBoardID: null, loggedIn: false}, action){
-
+export default function (state = {name: "", email: "", password: ""}, action){
   switch (action.type) {
-    case 'LOGIN_USER':
-      return Object.assign({}, state, {id: action.currentUser.user_id, name: action.currentUser.user_name, loggedIn: true})
+    case 'ADD_USER':
+      return Object.assign({}, state, {name: name, email: email, password: password})
     default:
       return state
     }

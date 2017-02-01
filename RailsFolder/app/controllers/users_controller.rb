@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :verify_authenticity_token
+  # skip_before_action :verify_authenticity_token
 
   def index
     @users = User.all
@@ -12,14 +12,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    byebug
     @user = User.new(user_params)
     if @user.save
-      @match = Match.create(user_params)
-      @user.matches = Match.all.select {|person| person.id != @user.id}
-      render json: @user, status: :created, location: @user
+      render json: @user
     else
-      render json: @song.errors, status: :unprocessable_entity
+      "Error!"
     end
   end
 
@@ -49,7 +46,7 @@ class UsersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def user_params
-      params.require(:user).permit(:id, :name, :age, :gender, :description, :looking_for)
+      params.require(:user).permit(:name, :email, :password)
     end
 
 

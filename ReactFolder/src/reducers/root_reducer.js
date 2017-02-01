@@ -1,9 +1,14 @@
 import { combineReducers } from 'redux';
-import currentUser from './reducer_users'
+import UsersReducer from './reducer_users'
 import ProductsReducer from './reducer_products'
 
 const rootReducer = combineReducers({
-  products: ProductsReducer
+  products: ProductsReducer,
+  users: UsersReducer
+
+
+  //do I have to use rootReducer, or could I just use a combine reducers function everywhere?
+
 });
 
 export default rootReducer;

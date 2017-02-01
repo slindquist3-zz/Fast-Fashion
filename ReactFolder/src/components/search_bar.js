@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { fetchProducts } from '../actions/fetchProducts'
+import { browserHistory, Router, Route, IndexRoute } from 'react-router'
+
 
 class SearchBar extends Component {
 
@@ -23,6 +25,7 @@ class SearchBar extends Component {
 
     this.props.fetchProducts(this.state.search);
     this.setState({ search: "" });
+    browserHistory.push('/columns')
   }
 
   render() {
