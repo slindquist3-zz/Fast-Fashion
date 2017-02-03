@@ -1,4 +1,5 @@
 import axios from 'axios'
+import addCart from './addCart'
 
 const url = "http://localhost:3000/"
 

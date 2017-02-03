@@ -4010,11 +4010,10 @@ input[type=range] + .thumb {
 }
 
 nav {
-  color: #fff;
-  background-color: #ee6e73;
+  color: black;
+  background-color: white;
   width: 100%;
   height: 56px;
-  line-height: 56px;
 }
 
 nav.nav-extended {
@@ -4026,7 +4025,7 @@ nav.nav-extended .nav-wrapper {
 }
 
 nav a {
-  color: #fff;
+  color: #black;
 }
 
 nav i,
@@ -4035,7 +4034,6 @@ nav i.material-icons {
   display: block;
   font-size: 24px;
   height: 56px;
-  line-height: 56px;
 }
 
 nav .nav-wrapper {
@@ -4120,13 +4118,13 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 
 nav ul a {
   transition: background-color .3s;
   font-size: 1rem;
-  color: #fff;
+  color: black;
   display: block;
   padding: 0 15px;
   cursor: pointer;

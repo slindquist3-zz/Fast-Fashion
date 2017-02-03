@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from '../components/search_bar'
 import Columns from './columns'
 import SignUp from '../components/sign_up'
+import NavBar from './nav_bar'
 
 
 export default class App extends Component {
@@ -14,7 +15,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        {/* <Columns products= {this.state.products}/> */}
+        <NavBar />
+        <h1 className="customTitle">Darling...</h1>
         {this.props.children}
       </div>
     );
