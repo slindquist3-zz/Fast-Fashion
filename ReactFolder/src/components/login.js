@@ -29,16 +29,16 @@ class Login extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.actions.loginUser(this.state.credentials);
+    this.props.loginUser(this.state.credentials);
   }
 
   render() {
     return (
-      <form  onSubmit={this.handleClick} >
+      <form  onSubmit={this.handleSubmit} >
         <label>Email</label>
-        <input type="text" value={this.state.email} onChange={this.handleChange.bind(this, "email")} /><br />
+        <input type="text" value={this.state.credentials.email} onChange={this.handleChange.bind(this)} name="email" /><br />
         <label>Password</label>
-        <input type="text" value={this.state.password} onChange={this.handleChange.bind(this, "password")}/><br />
+        <input type="text" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
         <input type="submit" />
       </form>
     );

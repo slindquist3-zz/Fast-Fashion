@@ -1,20 +1,24 @@
+import axios from 'axios'
+
+
 class SessionApi {
   static login(credentials) {
-    const request = new Request('http://localhost:5000/login', {
-      method: 'POST',
-      headers: new Headers({
-        'Content-Type': 'application/json'
-      }),
-      body: JSON.stringify({auth: credentials})
-    });
+      return axios.post("http://localhost:3000/login",
+      JSON.stringify({auth: credentials}),
+      { headers: {'Content-Type': 'application/json'}
+      })
+    }
 
+    static signUp(credentials) {
+      debugger
+      //credentials are undefined 
+      return axios.post("http://localhost:3000/users",
+      JSON.stringify({auth: credentials}),
+      { headers: {'Content-Type': 'application/json'}
+      })
+    }
 
-    return fetch(request).then(response => {
-      return response.json();
-    }).catch(error => {
-      return error;
-    });
   }
-}
+
 
 export default SessionApi;

@@ -13,7 +13,7 @@
       float: left;
   }
 
-  li a {
+  li img {
       display: block;
       color: black;
       text-align: left;
@@ -54,6 +54,44 @@
 }
 
 .searchIcon {
-  height: 36%;
-  width: 36%;
+  height: 25%;
+  width: 25%;
 }
+
+.loginIcon {
+  height: 55%;
+  width: 55%;
+  text-align: center;
+}
+
+.homeIcon {
+  height: 55%;
+  width: 55%;
+}
+
+.cartIcon {
+  height: 55%;
+  width: 55%;
+}
+
+ul li {
+    text-align: center;
+}
+
+ul li {
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+
+
+.navIcons {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+}
+
+/*.blackBackground {
+  background-color: black;
+}*/
