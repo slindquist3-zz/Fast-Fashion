@@ -25,7 +25,7 @@ class SearchBar extends Component {
 
     this.props.fetchProducts(this.state.search);
     this.setState({ search: "" });
-    browserHistory.push('/columns')
+    browserHistory.push('/profile/:id')
   }
 
   render() {

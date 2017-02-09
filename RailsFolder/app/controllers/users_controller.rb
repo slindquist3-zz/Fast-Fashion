@@ -13,9 +13,12 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    # user_params are nil
+
     if @user.save
-      render json: @user
+      @cart = Cart.create(user_id: @user.id)
+      jwt = Auth.issue({auth: @user.id})
+      render json: {jwt: jwt}
+
     else
       "Error!"
     end

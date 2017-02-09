@@ -74,6 +74,11 @@
   width: 55%;
 }
 
+.signupIcon {
+  height: 25%;
+  width:  25%;
+}
+
 ul li {
     text-align: center;
 }
@@ -91,6 +96,7 @@ ul li {
   margin-right: auto;
   float: center;
 }
+
 
 /*.blackBackground {
   background-color: black;

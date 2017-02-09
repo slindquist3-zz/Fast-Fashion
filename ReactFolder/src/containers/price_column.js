@@ -32,7 +32,7 @@ class PriceColumn extends Component {
   render() {
     return(
 
-        <div className="col s4 push-s4">
+        <div className="col s4 push-s4" key="results">
         lower-priced products
           {this.props.products.map(this.renderProducts)}
         </div>
