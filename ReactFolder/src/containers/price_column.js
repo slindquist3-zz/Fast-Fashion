@@ -3,33 +3,53 @@ import { connect } from 'react-redux'
 
 class PriceColumn extends Component {
 
-  renderProducts(products) {
+  constructor(props) {
+    super(props)
+
+    this.state = {products: this.props.products}
+
+    this.addToCart = this.addToCart.bind(this)
+    }
+
+  addToCart(event) {
+    event.preventDefault()
+    debugger
+    console.log("I was pressed!")
+  }
+
+  renderProducts(products, addToCart) {
 
     var list = products.data.map(function(product) {
+      //this is an array of product objects
       return product
     })
 
     var items = list.map(function(item) {
+      //this is an array of the information (keyword, price, thumbnail that I want from each product object)
       return (
         <ul>
           <li>
             {item.keyword}
+
           </li>
           <li>
             ${item.price}
           </li>
           <img src={item.image_url} />
+          <li>
+            <input type="submit" onClick={this.addToCart}></input>
+          </li>
         </ul>
       )
     })
-    console.log(items)
-
     return (
+      //returns the desired info
         <div>{items}</div>
     )
   }
 
   render() {
+    //calls the function to get the info I want over the return from the api
     return(
 
         <div className="col s4 push-s4" key="results">

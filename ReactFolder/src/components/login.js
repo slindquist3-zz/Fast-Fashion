@@ -34,12 +34,20 @@ class Login extends Component {
 
   render() {
     return (
-      <form  onSubmit={this.handleSubmit} >
-        <label>Email</label>
-        <input type="text" value={this.state.credentials.email} onChange={this.handleChange.bind(this)} name="email" /><br />
-        <label>Password</label>
-        <input type="text" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
-        <input type="submit" />
+      <form className="col s12" onSubmit={this.handleSubmit} >
+        <div className="row">
+          <div className="input-field col s5">
+            <label>Email</label>
+            <input type="text" value={this.state.credentials.email} onChange={this.handleChange.bind(this)} name="email" /><br />
+          </div>
+          <div className="input-field col s5">
+            <label>Password</label>
+            <input type="text" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
+          </div>
+          <div className="input-field col s2">
+            <input type="submit" />
+          </div>
+        </div>
       </form>
     );
   }

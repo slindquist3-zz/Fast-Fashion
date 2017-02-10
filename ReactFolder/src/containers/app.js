@@ -15,7 +15,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar/>
         <h1 className="customTitle color">Darling...</h1>
         {this.props.children}
       </div>

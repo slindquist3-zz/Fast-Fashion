@@ -1,31 +1,21 @@
+.float-button {
+  /*border-radius: 50%;*/
+  /*width: 30px;*/
+  /*position: absolute;*/
+  /*bottom: 30em; /* Adjust to where you want it */*/
+  left: 40em;
+  top: .5em;
+}
 
+/*.float-button .height_fix {
+  margin-top: 100%;
+}*/
 
-  ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: white;
-      float: right;
-  }
-
-  li {
-      float: left;
-  }
-
-  li img {
-      display: block;
-      color: black;
-      text-align: left;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-      background-color: white;
-  }
-
+ul > li {
+  padding-bottom: 5em;
+}
+ul li {
+  padding-top: 1px;
 }
 
 .customSearchForm {
@@ -79,15 +69,7 @@
   width:  25%;
 }
 
-ul li {
-    text-align: center;
-}
 
-ul li {
-    display: inline;
-    width: 100px;
-    height: 100px;
-}
 
 
 .navIcons {
@@ -96,6 +78,12 @@ ul li {
   margin-right: auto;
   float: center;
 }
+
+.topCorner{
+   position:absolute;
+   top:0;
+   right:0;
+ }
 
 
 /*.blackBackground {
