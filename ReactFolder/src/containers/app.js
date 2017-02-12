@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import SearchBar from '../components/search_bar'
-import Columns from './columns'
-import SignUp from '../components/sign_up'
 import NavBar from './nav_bar'
 
 
