@@ -8,14 +8,7 @@ class PriceColumn extends Component {
 
     this.state = {products: this.props.products}
 
-    this.addToCart = this.addToCart.bind(this)
     }
-
-  addToCart(event) {
-    event.preventDefault()
-    debugger
-    console.log("I was pressed!")
-  }
 
   renderProducts(products, addToCart) {
 
@@ -37,7 +30,7 @@ class PriceColumn extends Component {
           </li>
           <img src={item.image_url} />
           <li>
-            <input type="submit" onClick={this.addToCart}></input>
+            <input type="submit"></input>
           </li>
         </ul>
       )
