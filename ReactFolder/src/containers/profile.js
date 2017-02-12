@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 // import Columns from './columns'
-import ProductList from './product_list'
+import PriceColumn from './price_column'
 import Cart from './cart'
 import SearchBar from '../components/search_bar'
 
@@ -14,7 +14,7 @@ export default class Profile extends Component {
       <div className="row">
       <SearchBar />
       <Cart />
-      <ProductList />
+      <PriceColumn />
       </div>
     )
   }
