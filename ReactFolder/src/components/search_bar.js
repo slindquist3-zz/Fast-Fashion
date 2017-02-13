@@ -33,13 +33,13 @@ class SearchBar extends Component {
       <div>
         <div className="row">
            <form className="customSearchForm" onSubmit={this.onFormSubmit}>
-             <div className="col s10">
+             <div className="col s8 offset-s1">
                <input
                  placeholder="What are you looking for?"
                  value = {this.state.search}
                  onChange = {this.onInputChange} />
              </div>
-             <div className="col s2">
+             <div className="col s3 pull-s1">
                <input className="searchIcon" type="image" src="../../images/search_icon.png" alt="Submit"/>
              </div>
            </form>

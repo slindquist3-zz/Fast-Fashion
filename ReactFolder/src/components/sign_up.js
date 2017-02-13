@@ -38,7 +38,7 @@ class SignUp extends Component {
     return (
     <form className="col s12" onSubmit={this.handleClick}>
       <div className="row">
-        <div className="input-field col s3">
+        <div className="input-field col s3 offset-s1">
           <label>Name</label>
           <input type="text" value={this.state.credentials.name} onChange={this.handleChange.bind(this)} name="name" /><br />
         </div>
@@ -50,8 +50,8 @@ class SignUp extends Component {
           <label>Password</label>
           <input type="text" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
         </div>
-        <div className="input-field col s3">
-          <button className="black"  type="submit" name="action">Submit
+        <div className="input-field col s1">
+          <button className="ghost" type="submit" name="action">Submit
           </button>
         </div>
       </div>

@@ -1,9 +1,29 @@
 
 .black {
-  background-color: black;
+  background-color: white;
+  border-color: white;
   width: 80px;
-  height: 40px;
+  height: 50px;
   border-radius: 10px;
+}
+
+.ghost {
+  background-color: white;
+  border-color: gray;
+  width: 80px;
+  height: 45px;
+  border-radius: 10px;
+  font-family: "Roboto";
+  color: gray;
+  font-size: 15px;
+  border-width: 2px;
+}
+
+.ghost:hover {
+  background-color: #F0F0F0	;
+  color: black;
+
+
 }
 
 .float-button {
