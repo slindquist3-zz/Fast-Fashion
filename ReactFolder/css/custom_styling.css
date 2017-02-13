@@ -20,8 +20,9 @@
 }
 
 .ghost:hover {
-  background-color: #F0F0F0	;
+  background-color: #FFF0F5;
   color: black;
+  border-color: black;
 
 
 }
