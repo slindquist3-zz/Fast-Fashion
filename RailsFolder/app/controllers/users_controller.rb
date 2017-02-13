@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     if @user.save
       @cart = Cart.create(user_id: @user.id)
       jwt = Auth.issue({auth: @user.id})
-      render json: {jwt: jwt}
+      render json: {jwt: jwt, cart_id: @cart.id}
 
     else
       "Error!"

@@ -51,7 +51,7 @@ class SignUp extends Component {
           <input type="text" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
         </div>
         <div className="input-field col s3">
-          <button type="submit" name="action">Submit
+          <button className="black"  type="submit" name="action">Submit
           </button>
         </div>
       </div>

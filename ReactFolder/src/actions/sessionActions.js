@@ -18,6 +18,7 @@ export function signUpUser(credentials) {
    let request = sessionApi.signUp(credentials).then(response => {
       sessionStorage.setItem('jwt', response.data.jwt);
       browserHistory.push(`/profile/${response.data.jwt}`)
+      return response
     }).catch(error => {
       throw(error);
     });

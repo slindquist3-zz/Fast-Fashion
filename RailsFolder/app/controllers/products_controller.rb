@@ -9,12 +9,13 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @product = Product.new
-    @product.name = params[:name]
-    @product.price = params[:price]
-    @product.thumbnail = params[:thumbnail]
-    @product.cart_id = params[:cart_id]
-    @product.save
+    @product = Product.create(product_params)
+    render json: @product.cart, serializer: CartSerializer
+  end
+
+  private
+  def product_params
+    params.require(:product).permit(:name, :price, :thumbnail, :cart_id)
   end
 
 end

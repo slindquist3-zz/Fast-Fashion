@@ -8,28 +8,20 @@ class ProductList extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {products: this.props.products}
-    // this.addToCart = this.addToCart.bind(this)
+    this.state = {products: this.props.products,
+                  cart_id: this.props.cart}
+
+    this.renderProducts = this.renderProducts.bind(this)
 
     }
 
   renderProducts(products) {
-    var list = products.map(function(product, index) {
-
-
-      //this is an array of product objects
+    var list = products.map((product, index) => {
        return (
-         <ul ><Product id={index} keyword={product.keyword} price={product.price} image_url={product.image_url} /></ul>
-        // <ul id={index}>
-        //   <li>{index}</li>
-        //   <li>{product.keyword}</li>
-        //   <li>${product.price}</li>
-        //   <img src={product.image_url} />
-        //   <li><input onSubmit={addToCart()} type="submit"></input></li>
-        // </ul>
+         <ul ><Product id={index} keyword={product.keyword} price={product.price} image_url={product.image_url} cart_id={this.props.cart.cart_id}/></ul>
       )
     })
-
+//how to get cart set in state
     return (
       //returns the desired info
         <div>{list}</div>
@@ -53,8 +45,9 @@ class ProductList extends Component {
   }
 }
 
-function mapStateToProps({products}) {
-  return {products};
+function mapStateToProps({products, cart}) {
+  return {products,
+          cart};
 }
 
 export default connect(mapStateToProps)(ProductList)
