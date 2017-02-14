@@ -37,8 +37,8 @@ class ProductList extends Component {
     //calls the function to get the info I want over the return from the api
     return(
 
-        <div className="col s4 push-s4">
-        lower-priced products
+        <div className="col s6 push-s1">
+            <h4><strong>Hope this helps.</strong></h4>
           {this.props.products.map(this.renderProducts)}
         </div>
     )

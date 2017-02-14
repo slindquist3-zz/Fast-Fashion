@@ -1,10 +1,27 @@
+.customButton {
+  background-color: black;
+  text-transform: none;
+  height: 45px;
+  border-radius: 25px;
+  padding-top: 5px;
+}
 
-.black {
-  background-color: white;
-  border-color: white;
-  width: 80px;
-  height: 50px;
-  border-radius: 10px;
+.underSearchBar {
+  padding-top: 2em;
+  text-align: center;
+}
+
+.productProps {
+  padding-bottom: 5px;
+}
+
+.productPropsBottom {
+  padding-bottom: 20px;
+}
+
+.imageCenter {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ghost {
@@ -20,7 +37,7 @@
 }
 
 .ghost:hover {
-  background-color: #FFF0F5;
+  background-color: #FDF8FF;
   color: black;
   border-color: black;
 

@@ -36,7 +36,7 @@ class Login extends Component {
     return (
       <form className="col s12" onSubmit={this.handleSubmit} >
         <div className="row">
-          <div className="input-field col s5 offset-s1">
+          <div className="input-field col s4 offset-s1">
             <label>Email</label>
             <input type="text" value={this.state.credentials.email} onChange={this.handleChange.bind(this)} name="email" /><br />
           </div>
@@ -45,7 +45,7 @@ class Login extends Component {
             <input type="text" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
           </div>
           <div className="input-field col s2">
-          <button className="ghost" type="submit">Submit</button>
+            <a className="customButton waves-effect waves-light btn">Submit</a>
           </div>
         </div>
 

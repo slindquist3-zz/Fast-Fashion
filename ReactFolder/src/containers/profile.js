@@ -13,8 +13,12 @@ export default class Profile extends Component {
 
       <div className="row">
       <SearchBar />
-      <Cart />
-      <ProductList />
+        <div className="underSearchBar">
+          <div className="row">
+          <Cart />
+          <ProductList/>
+          </div>
+        </div>
       </div>
     )
   }

@@ -12,11 +12,10 @@ class Product extends Component {
     return(
       //we will need to change 'item' for this.props.products.(id).'blank'
       <div>
-        <li>{this.props.keyword}</li>
-        <li>${this.props.price}</li>
-        <img src={this.props.image_url} />
-        <li>{this.props.id}</li>
-        <li><input type="submit" onClick={this.addToCart.bind(this)}></input></li>
+        <li className="productProps"><strong>{this.props.keyword}</strong></li>
+        <img className="imageCenter productProps" src={this.props.image_url} />
+        <li className="productProps"><strong>${this.props.price}</strong></li>
+        <li className="productPropsBottom"><a onClick={this.addToCart.bind(this)} className="customButton waves-effect waves-light btn">Add to Cart</a></li>
       </div>
     )
   }

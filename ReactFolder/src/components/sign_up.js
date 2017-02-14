@@ -46,13 +46,12 @@ class SignUp extends Component {
           <label>Email</label>
           <input type="text" value={this.state.credentials.email} onChange={this.handleChange.bind(this)} name="email"/><br />
         </div>
-        <div className="input-field col s3">
+        <div className="input-field col s2">
           <label>Password</label>
           <input type="text" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
         </div>
         <div className="input-field col s1">
-          <button className="ghost" type="submit" name="action">Submit
-          </button>
+          <a className="customButton waves-effect waves-light btn">Submit</a>
         </div>
       </div>
     </form>
