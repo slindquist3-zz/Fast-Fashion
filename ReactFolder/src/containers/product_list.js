@@ -9,7 +9,7 @@ class ProductList extends Component {
     super(props)
 
     this.state = {products: this.props.products,
-                  cart_id: this.props.cart}
+                  cart_id: this.props.cart_id}
 
     this.renderProducts = this.renderProducts.bind(this)
 
@@ -18,36 +18,30 @@ class ProductList extends Component {
   renderProducts(products) {
     var list = products.map((product, index) => {
        return (
-         <ul ><Product id={index} keyword={product.keyword} price={product.price} image_url={product.image_url} cart_id={this.props.cart.cart_id}/></ul>
+         <ul ><Product id={index} keyword={product.keyword} price={product.price} image_url={product.image_url} cart_id={this.props.cart_id.cart_id}/></ul>
       )
     })
-//how to get cart set in state
     return (
-      //returns the desired info
+
         <div>{list}</div>
     )
   }
-    //
-    // addToCart(event) {
-    //   event.preventDefault()
-    //   console.log("I was pressed")
-    // }
 
   render() {
-    //calls the function to get the info I want over the return from the api
+
     return(
 
-        <div className="col s6 push-s1">
-            <h4><strong>Hope this helps.</strong></h4>
+        <div className="col s6">
+            <h4><strong>Products</strong></h4>
           {this.props.products.map(this.renderProducts)}
         </div>
     )
   }
 }
 
-function mapStateToProps({products, cart}) {
+function mapStateToProps({products, cart_id}) {
   return {products,
-          cart};
+          cart_id};
 }
 
 export default connect(mapStateToProps)(ProductList)
