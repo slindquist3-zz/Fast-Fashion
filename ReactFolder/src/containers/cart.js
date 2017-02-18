@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { deleteProduct } from '../actions/deleteProduct'
+import { bindActionCreators } from 'redux'
+
 
 
 class Cart extends Component {
@@ -23,17 +26,29 @@ class Cart extends Component {
                 <p className="productProps" >{product.name}</p>
                 <img className="imageCenter productProps" src={product.thumbnail} />
                 <p className="productProps" >{product.price}</p>
-                <p className="productPropsBottom"><a className="customButton waves-effect waves-light btn">Delete</a></p>
+                <p className="productPropsBottom"><a onClick={this.deleteFromCart(product).bind(this)} className="customButton waves-effect waves-light btn">Delete</a></p>
               </div>
             )
-          })}
+          }.bind(this))}
         </div>
     )
   }
+
+  deleteFromCart(event) {
+    debugger
+    event.preventDefault()
+    this.props.deleteProduct(product)
+  }
+
+}
+
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ deleteProduct }, dispatch)
 }
 
 function mapStateToProps({cart}) {
   return {cart};
 }
 
-export default connect(mapStateToProps)(Cart)
+export default connect(mapStateToProps, mapDispatchToProps)(Cart)

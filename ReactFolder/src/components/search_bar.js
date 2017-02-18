@@ -33,7 +33,7 @@ class SearchBar extends Component {
       <div>
         <div className="row">
            <form className="customSearchForm" onSubmit={this.onFormSubmit}>
-             <div className="col s8 offset-s1">
+             <div className="col s7 offset-s2">
                <input
                  placeholder="What are you looking for?"
                  value = {this.state.search}

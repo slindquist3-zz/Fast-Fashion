@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { createProduct } from '../actions/addProduct'
+import { addProduct } from '../actions/addProduct'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
@@ -24,7 +24,7 @@ class Product extends Component {
   addToCart(event){
     event.preventDefault();
     const product = {product: {name: this.props.keyword, thumbnail: this.props.image_url, price: this.props.price, cart_id: this.props.cart_id}}
-    this.props.createProduct(product);
+    this.props.addProduct(product);
 
     //class method with action imported from action folder that will allow the item to be stored in a cart state
   }
@@ -32,7 +32,7 @@ class Product extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators( {createProduct}, dispatch)
+  return bindActionCreators( {addProduct}, dispatch)
 }
 
 export default connect(null, mapDispatchToProps)(Product)

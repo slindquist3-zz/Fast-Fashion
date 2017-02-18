@@ -20,4 +20,10 @@ class ProductsController < ApplicationController
     params.require(:product).permit(:name, :price, :thumbnail, :cart_id)
   end
 
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    render json: @products
+  end
+
 end
