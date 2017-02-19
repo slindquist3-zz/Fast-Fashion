@@ -4,10 +4,6 @@ import { loginUser } from '../actions/sessionActions'
 import { bindActionCreators } from 'redux'
 import { browserHistory, Router, Route, IndexRoute } from 'react-router'
 
-// import InventoryList from './InventoryList'
-
-
-
 class Login extends Component {
   // debugger
   constructor(props) {
@@ -38,19 +34,18 @@ class Login extends Component {
         <div className="row">
           <div className="input-field col s4 offset-s1">
             <label>Email</label>
-            <input type="text" value={this.state.credentials.email} onChange={this.handleChange.bind(this)} name="email" /><br />
+            <input type="text" value={this.state.credentials.email}
+                    onChange={this.handleChange.bind(this)} name="email" /><br/>
           </div>
           <div className="input-field col s4">
             <label>Password</label>
-            <input type="password" value={this.state.credentials.password} onChange={this.handleChange.bind(this)} name="password"/><br />
+            <input type="password" value={this.state.credentials.password}
+                    onChange={this.handleChange.bind(this)} name="password"/><br/>
           </div>
           <div className="input-field col s2">
             <a className="customButton waves-effect waves-light btn">Submit</a>
           </div>
         </div>
-
-
-
       </form>
     );
   }

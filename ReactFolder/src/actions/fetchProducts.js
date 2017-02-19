@@ -3,9 +3,6 @@ import axios from 'axios'
 const API_KEY = "833625feb0218c764640681d15327431"
 const ROOT_URL = "http://api.prosperent.com/api/search?query="
 
-// sample = "http://api.prosperent.com/api/search?query=mens+running+shoes&api_key=833625feb0218c764640681d15327431"
-// `http://api.prosperent.com/api/search?query=${search}&api_key=${API_KEY}`
-
 export const FETCH_PRODUCTS = 'FETCH_PRODUCTS'
 
 export function fetchProducts(search) {

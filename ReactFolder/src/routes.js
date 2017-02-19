@@ -6,7 +6,6 @@ import SignUp from './components/sign_up'
 import SearchBar from './components/search_bar'
 import Login from './components/login'
 import Profile from './containers/profile'
-// import Cart from
 
 export default (
     <Route path="/" component={App}>

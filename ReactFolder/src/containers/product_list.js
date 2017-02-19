@@ -12,17 +12,20 @@ class ProductList extends Component {
                   cart_id: this.props.cart_id}
 
     this.renderProducts = this.renderProducts.bind(this)
-
-    }
+  }
 
   renderProducts(products) {
     var list = products.map((product, index) => {
        return (
-         <ul ><Product id={index} keyword={product.keyword} price={product.price} image_url={product.image_url} cart_id={this.props.cart_id.cart_id}/></ul>
+         <ul ><Product id={index}
+                      keyword={product.keyword}
+                      price={product.price}
+                      image_url={product.image_url}
+                      cart_id={this.props.cart_id.cart_id}/>
+         </ul>
       )
     })
     return (
-
         <div>{list}</div>
     )
   }
@@ -30,7 +33,6 @@ class ProductList extends Component {
   render() {
 
     return(
-
         <div className="col s6">
             <h4><strong>Product List</strong></h4>
           {this.props.products.map(this.renderProducts)}

@@ -9,13 +9,6 @@ const rootReducer = combineReducers({
   users: UsersReducer,
   cart_id: CartsIDReducer,
   cart: CartsReducer
-
-
-  //do I have to use rootReducer, or could I just use a combine reducers function everywhere?
-
 });
 
 export default rootReducer;
-
-
-// export default combineReducers({currentUser, ProductsReducer})

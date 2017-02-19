@@ -6,17 +6,16 @@ import { bindActionCreators } from 'redux'
 
 class Product extends Component {
 
-
-  //this container will render each of the individual items that result from search
   render(){
 
     return(
-      //we will need to change 'item' for this.props.products.(id).'blank'
       <div>
         <p className="productProps"><strong>{this.props.keyword}</strong></p>
         <img className="imageCenter productProps" src={this.props.image_url} />
         <p className="productProps"><strong>${this.props.price}</strong></p>
-        <p className="productPropsBottom"><a onClick={this.addToCart.bind(this)} className="customButton waves-effect waves-light btn">Add to Cart</a></p>
+        <p className="productPropsBottom"><a onClick={this.addToCart.bind(this)}
+          className="customButton waves-effect waves-light btn">Add to Cart</a>
+        </p>
       </div>
 
     )
@@ -25,17 +24,18 @@ class Product extends Component {
 
   addToCart(event){
     event.preventDefault();
-    const product = {product: {name: this.props.keyword, thumbnail: this.props.image_url, price: this.props.price, cart_id: this.props.cart_id}}
-    this.props.addProduct(product);
+    const product = {product: {name: this.props.keyword,
+                              thumbnail: this.props.image_url,
+                              price: this.props.price,
+                              cart_id: this.props.cart_id}}
 
-    //class method with action imported from action folder that will allow the item to be stored in a cart state
+    this.props.addProduct(product);
   }
 
   deleteFromCart(event) {
     event.preventDefault()
     this.props.deleteProduct(product)
   }
-
 }
 
 function mapStateToProps({cart}) {

@@ -4,12 +4,7 @@ import { signUpUser } from '../actions/sessionActions'
 import { bindActionCreators } from 'redux'
 import { browserHistory, Router, Route, IndexRoute } from 'react-router'
 
-// import InventoryList from './InventoryList'
-
-
-
 class SignUp extends Component {
-  // debugger
   constructor(props) {
     super(props)
 
@@ -26,8 +21,6 @@ class SignUp extends Component {
   }
 
     handleChange(event) {
-
-      //why is field undefined?
       const field = event.target.name;
       const credentials = this.state.credentials;
       credentials[field] = event.target.value;
