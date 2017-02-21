@@ -17,7 +17,7 @@ export const store = configureStore()
 // const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(rootReducer)}>
+  <Provider store={store}>
     <Router history={browserHistory} routes={routes} />
   </Provider>
   , document.querySelector('.container'));
