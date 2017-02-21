@@ -32,10 +32,6 @@ class Product extends Component {
     this.props.addProduct(product);
   }
 
-  deleteFromCart(event) {
-    event.preventDefault()
-    this.props.deleteProduct(product)
-  }
 }
 
 function mapStateToProps({cart}) {
