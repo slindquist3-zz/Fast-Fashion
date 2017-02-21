@@ -1,7 +1,7 @@
 {
   "name": "React",
   "version": "1.0.0",
-  "private":true, 
+  "private":true,
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
