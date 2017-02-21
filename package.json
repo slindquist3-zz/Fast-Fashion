@@ -1,14 +1,7 @@
 {
-  "name": "redux-simple-starter",
+  "name": "React",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
-  },
-  "author": "",
-  "license": "ISC",
+  "private":true, 
   "devDependencies": {
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
@@ -35,6 +28,8 @@
     "redux": "^3.0.4",
     "redux-devtools-extension": "^1.0.0",
     "redux-promise": "^0.5.3",
+    "redux-promise-axios": "^0.0.8",
+    "redux-promise-middleware": "^4.2.0",
     "redux-thunk": "^2.2.0",
     "webpack": "^2.2.1"
   },
