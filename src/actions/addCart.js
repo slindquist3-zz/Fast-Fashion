@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = "http://localhost:3000/"
+const url = "https://darling-api.herokuapp.com/"
 
 export const ADD_CART = 'ADD_CART'
 
