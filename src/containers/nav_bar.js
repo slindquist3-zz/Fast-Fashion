@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 export default class NavBar extends Component {
 
@@ -10,9 +11,9 @@ export default class NavBar extends Component {
                <i className="large material-icons">menu</i>
              </a>
              <ul>
-               <li><a href="/" className="btn-floating black"><i className="material-icons">home</i></a></li>
-               <li><a href="/login" className="btn-floating black"><i className="material-icons">vpn_key</i></a></li>
-               <li><a href="/search" className="btn-floating black"><i className="material-icons">shopping_cart</i></a></li>
+               <li><Link href="/" className="btn-floating black"><i className="material-icons">home</i></Link></li>
+               <li><Link href="/login" className="btn-floating black"><i className="material-icons">vpn_key</i></Link></li>
+               <li><Link href="/search" className="btn-floating black"><i className="material-icons">shopping_cart</i></Link></li>
              </ul>
            </div>
           </div>
