@@ -10,7 +10,7 @@ export function fetchProducts(search) {
     search = search.split(" ").join("+")
   }
 
-  const url = `http://api.prosperent.com/api/search?query=${search}&api_key=${API_KEY}`
+  const url = `https://cors-anywhere.herokuapp.com/http://api.prosperent.com/api/search?query=${search}&api_key=${API_KEY}`
   const request = axios.get(url)
 
   console.log('Request': request);
