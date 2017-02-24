@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = "https://darling-api.herokuapp.com/"
+const url = "https://cors-anywhere.herokuapp.com/https://https://darling-api.herokuapp.com/"
 
 export const ADD_CART = 'ADD_CART'
 
