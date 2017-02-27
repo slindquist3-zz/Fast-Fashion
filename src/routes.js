@@ -6,14 +6,14 @@ import SignUp from './components/sign_up'
 import SearchBar from './components/search_bar'
 import Login from './components/login'
 import Profile from './containers/profile'
-import Checkout from './components/checkout'
+// import Checkout from './components/checkout'
 
 export default (
     <Route path="/" component={App}>
       <IndexRoute component={SignUp} />
       <Route path="/login" component={Login} />
       <Route path="/search" component={SearchBar} />
-      <Route path="/checkout" component={Checkout} />
+      {/* <Route path="/checkout" component={Checkout} /> */}
       <Route path="/profile/:id" component={Profile} />
     </Route>
 )
