@@ -12,10 +12,6 @@ import configureStore from './store/configureStore';
 
 export const store = configureStore()
 
-
-
-// const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
-
 ReactDOM.render(
   <Provider store={store}>
     <Router history={browserHistory} routes={routes} />
