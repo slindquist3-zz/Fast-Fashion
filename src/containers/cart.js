@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-
+//edit
 import CartProduct from './cart_product'
 
 class Cart extends Component {
