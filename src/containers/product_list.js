@@ -34,7 +34,7 @@ class ProductList extends Component {
 
     return(
         <div className="col s6">
-            <h4><strong>Product List</strong></h4>
+            <h4><strong>Products</strong></h4>
           {this.props.products.map(this.renderProducts)}
         </div>
     )

@@ -18,7 +18,7 @@ class Cart extends Component {
   render() {
     return(
         <div className="col s6">
-            <h4><strong>Cart</strong></h4>
+            <h4><strong>Your Cart</strong></h4>
           {this.renderProducts(this.props.cart)}
         </div>
     )
