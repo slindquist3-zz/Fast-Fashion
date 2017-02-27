@@ -58,10 +58,10 @@
 }*/
 
 ul > li {
-  padding-bottom: 10em;
+  padding-bottom: 5em;
 }
 ul li {
-  padding-top: 500px;
+  padding-top: 1px;
 }
 
 .customSearchForm {
