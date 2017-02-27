@@ -10,6 +10,7 @@ export default class Checkout extends Component {
           check out what the creator's up to over <a href="https://scott-lindquist.com">here!</a>
         </p>
         </div>
+        This is a test
       </div>
     )
   }
