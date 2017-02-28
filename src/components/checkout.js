@@ -9,6 +9,8 @@ export default class Checkout extends Component {
         <p>But... if you enjoyed your user experience,
           check out what the creator's up to over <a href="https://scott-lindquist.com">here!</a>
         </p>
+      </div>
+    </div>
     )
   }
 }
