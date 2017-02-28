@@ -6,6 +6,16 @@
   padding-top: 5px;
 }
 
+.float-button {
+  /*border-radius: 50%;*/
+  /*width: 30px;*/
+  /*position: absolute;*/
+  /*bottom: 30em; /* Adjust to where you want it */*/
+  left: 40em;
+  top: .5em;
+  background-color: black;
+}
+
 .logoColorD {
   color: #004d40;
 }
@@ -82,14 +92,7 @@
 
 }
 
-.float-button {
-  /*border-radius: 50%;*/
-  /*width: 30px;*/
-  /*position: absolute;*/
-  /*bottom: 30em; /* Adjust to where you want it */*/
-  left: 40em;
-  top: .5em;
-}
+
 
 /*.float-button .height_fix {
   margin-top: 100%;
