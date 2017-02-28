@@ -11,8 +11,8 @@ export default class Checkout extends Component {
 
 
             <div className="col s10 offset-s1">
-            <h5 className="center"> <a href="https://scott-lindquist.com" className="checkoutButton waves-effect waves-light btn">Click this button to see more of my work!</a>
-            </h5>
+            <h6 className="center"> <a href="https://scott-lindquist.com" className="checkoutButton waves-effect waves-light btn">Click this button to see more of my work!</a>
+          </h6>
           </div>
         </div>
       </div>
