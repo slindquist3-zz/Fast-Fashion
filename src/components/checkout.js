@@ -9,7 +9,7 @@ export default class Checkout extends Component {
           <h5 className="center">(This is just a portfolio piece.)</h5>
           <div className="row">
             <div className="col s10 offset-s1">
-            <h5 className="center">But... if you enjoyed your user experience, check out what the creator's up to over     <a href="https://scott-lindquist.com" className="checkoutButton waves-effect waves-light btn">here!</a>
+            <h5 className="center">But... if you enjoyed your user experience, check out what I'm up to       <a href="https://scott-lindquist.com" className="checkoutButton waves-effect waves-light btn">here!</a>
             </h5>
           </div>
         </div>
