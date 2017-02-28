@@ -6,6 +6,15 @@
   padding-top: 5px;
 }
 
+.checkoutButton {
+  background-color: black;
+  text-transform: none;
+  height: 20px;
+  border-radius: 25px;
+  padding-top: 5px;
+
+}
+
 .float-button {
   /*border-radius: 50%;*/
   /*width: 30px;*/
