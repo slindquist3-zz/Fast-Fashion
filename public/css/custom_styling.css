@@ -6,16 +6,42 @@
   padding-top: 5px;
 }
 
-.logoElipses1 {
+.logoColorD {
+  color: #004d40;
+}
+
+.logoColorA {
+  color: #00695c;
+}
+
+.logoColorR {
+  color: #00796b;
+}
+.logoColorL {
+  color: #00897b;
+}
+
+.logoColorI {
+  color: #009688;
+}
+
+.logoColorN {
+  color: #26a69a;
+}
+.logoColorG {
   color: #4db6ac;
 }
 
-.logoElipses2 {
+.logoColorEl1 {
   color: #80cbc4;
 }
 
-.logoElipses3 {
-  color: #b2dfdb;
+.logoColorEl2 {
+  color: #b2dfdb
+}
+
+.logoColorEl3 {
+  color: #e0f2f1
 }
 
 .underSearchBar {

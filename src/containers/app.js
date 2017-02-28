@@ -13,7 +13,18 @@ export default class App extends Component {
     return (
       <div>
         <NavBar/>
-        <h1 className="customTitle color">Darling<a className="logoElipses1">.</a><a className="logoElipses2">.</a><a className="logoElipses3">.</a></h1>
+        <h1 className="customTitle color">
+          <a className="logoColorD">D</a>
+          <a className="logoColorA">a</a>
+          <a className="logoColorR">r</a>
+          <a className="logoColorL">l</a>
+          <a className="logoColorI">i</a>
+          <a className="logoColorN">n</a>
+          <a className="logoColorG">g</a>
+          <a className="logoColorEl1">.</a>
+          <a className="logoColorEl2">.</a>
+          <a className="logoColorEl3">.</a>
+        </h1>
         {this.props.children}
       </div>
     );
