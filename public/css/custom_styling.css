@@ -25,7 +25,7 @@
 
 .hover-er {
   background-color: black;
-     transition: background-color 1s;
+     transition: background-color .5s;
 }
 
 .hover-er:hover {
