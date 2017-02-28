@@ -8,7 +8,7 @@ export default class NavBar extends Component {
           <div className="float-button">
             <div className="float-button fixed-action-btn click-to-toggle">
              <a className="float-button btn-floating btn-large black waves-effect waves-light btn">
-               <i className="large material-icons">menu</i>
+               <i className="hover-er large material-icons">menu</i>
              </a>
              <ul>
                <li><Link href="/" className="btn-floating teal lighten-2"><i className="material-icons">home</i></Link></li>
