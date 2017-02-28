@@ -116,10 +116,13 @@
 }*/
 
 ul > li {
-  padding-bottom: 5em;
+  padding-top: 1em;
 }
-ul li {
-  padding-top: 1px;
+/*ul li {
+  padding-top: 1em;
+}*/
+li + li {
+  margin-top: 4em;
 }
 
 .customSearchForm {
