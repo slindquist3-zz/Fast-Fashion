@@ -23,8 +23,17 @@
   background-color: #1de9b6;
 }
 
+.hover-er {
+  background-color: : black;
+     -webkit-transition: color 1s;
+     -moz-transition:    color 1s;
+     -ms-transition:     color 1s;
+     -o-transition:      color 1s;
+     transition:         color 1s;
+}
+
 .hover-er:hover {
-  background-color: #1de9b6;
+  background-color: #4db6ac;
 }
 
 
