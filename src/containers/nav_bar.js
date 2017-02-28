@@ -11,9 +11,9 @@ export default class NavBar extends Component {
                <i className="hover-er large material-icons">menu</i>
              </a>
              <ul>
-               <li><Link href="/" className="btn-floating teal lighten-2"><i className="material-icons">home</i></Link></li>
-               <li><Link href="/login" className="btn-floating teal lighten-2"><i className="material-icons">vpn_key</i></Link></li>
-               <li><Link href="/search" className="btn-floating teal lighten-2"><i className="material-icons">search</i></Link></li>
+               <li><Link href="/" className="btn-floating teal accent-4"><i className="material-icons">home</i></Link></li>
+               <li><Link href="/login" className="btn-floating teal accent-4"><i className="material-icons">vpn_key</i></Link></li>
+               <li><Link href="/search" className="btn-floating teal accent-4"><i className="material-icons">search</i></Link></li>
              </ul>
            </div>
           </div>
