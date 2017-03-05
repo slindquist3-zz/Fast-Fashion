@@ -30,13 +30,13 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="center">
            <form onSubmit={this.onFormSubmit}>
-               <input className= "welcomePageInput"
+               <input className= "searchPageInput"
                  placeholder="What are you looking for?"
                  value = {this.state.search}
                  onChange = {this.onInputChange} />
-               <input className="searchIcon" type="image" src="../../images/search_icon.png" alt="Submit"/>
+                <p><a className="ghost-search-button" alt="Submit" href="/search">SEARCH</a></p>
            </form>
        </div>
     )
