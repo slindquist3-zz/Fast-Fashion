@@ -12,8 +12,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <NavBar/>
-        <h1 className="customTitle color">
+        {/* <NavBar/> */}
+        {/* <h1 className="customTitle color">
           <a className="logoColorD">D</a>
           <a className="logoColorA">a</a>
           <a className="logoColorR">r</a>
@@ -24,7 +24,7 @@ export default class App extends Component {
           <a className="logoColorEl1">.</a>
           <a className="logoColorEl2">.</a>
           <a className="logoColorEl3">.</a>
-        </h1>
+        </h1> */}
         {this.props.children}
       </div>
     );

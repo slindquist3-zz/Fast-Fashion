@@ -31,19 +31,13 @@ class SearchBar extends Component {
   render() {
     return (
       <div>
-        <div className="row">
-           <form className="customSearchForm" onSubmit={this.onFormSubmit}>
-             <div className="col s7 offset-s2">
-               <input
+           <form onSubmit={this.onFormSubmit}>
+               <input className= "welcomePageInput"
                  placeholder="What are you looking for?"
                  value = {this.state.search}
                  onChange = {this.onInputChange} />
-             </div>
-             <div className="col s3 pull-s1">
                <input className="searchIcon" type="image" src="../../images/search_icon.png" alt="Submit"/>
-             </div>
            </form>
-         </div>
        </div>
     )
   };

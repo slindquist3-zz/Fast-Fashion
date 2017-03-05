@@ -1,3 +1,54 @@
+body {
+  background-image: url(background.jpg);;
+}
+
+.white {
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 2em;
+
+}
+
+.customSearchForm {
+  font-size: 2em;
+  text-align: center;
+  width: 20em;
+  color: black;
+}
+
+
+.welcome {
+  color: white;
+  font-weight: 300;
+  font-family: Lobster;
+  text-align: center;
+  font-size: 12em;
+  margin: 0;
+  }
+
+
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 3px solid;
+  border-color: white;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  font-family: futura;
+  border-radius: 25px;
+  transition: background-color .25s;
+  margin-left: 42%;
+}
+
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+}
+
 .customButton {
   background-color: black;
   text-transform: none;
@@ -42,45 +93,6 @@
   background-color: #00bfa5;
 }
 
-
-.logoColorD {
-  color: #004d40;
-}
-
-.logoColorA {
-  color: #00695c;
-}
-
-.logoColorR {
-  color: #00796b;
-}
-.logoColorL {
-  color: #00897b;
-}
-
-.logoColorI {
-  color: #009688;
-}
-
-.logoColorN {
-  color: #26a69a;
-}
-.logoColorG {
-  color: #4db6ac;
-}
-
-.logoColorEl1 {
-  color: #80cbc4;
-}
-
-.logoColorEl2 {
-  color: #b2dfdb
-}
-
-.logoColorEl3 {
-  color: #e0f2f1
-}
-
 .underSearchBar {
   padding-top: 2em;
   text-align: center;
@@ -120,11 +132,6 @@
 }
 
 
-
-/*.float-button .height_fix {
-  margin-top: 100%;
-}*/
-
 ul > li {
   padding-top: 1em;
 }
@@ -135,9 +142,10 @@ li + li {
   margin-top: 4em;
 }
 
-.customSearchForm {
-  font-size: 2em;
-  text-align: center;
+.welcomePageInput{
+  background-color: white;
+  font-size: 1em;
+
 }
 
 ::-webkit-input-placeholder {
@@ -166,45 +174,3 @@ li + li {
   text-align: center;
 
 }
-
-.loginIcon {
-  height: 55%;
-  width: 55%;
-  text-align: center;
-}
-
-.homeIcon {
-  height: 55%;
-  width: 55%;
-}
-
-.cartIcon {
-  height: 55%;
-  width: 55%;
-}
-
-.signupIcon {
-  height: 25%;
-  width:  25%;
-}
-
-
-
-
-.navIcons {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  float: center;
-}
-
-.topCorner{
-   position:absolute;
-   top:0;
-   right:0;
- }
-
-
-/*.blackBackground {
-  background-color: black;
-}*/
