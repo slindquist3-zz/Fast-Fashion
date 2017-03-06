@@ -1,6 +1,7 @@
 body {
-  background-image: url(background.jpg);;
-}
+  background-image: url(../background.jpg);;
+  background-repeat: no-repeat;
+ }
 
 .white {
   background-color: white;
@@ -18,7 +19,7 @@ body {
   font-weight: 300;
   font-family: Lobster;
   text-align: center;
-  font-size: 12em;
+  font-size: 7em;
   margin: 0;
   }
 
@@ -57,7 +58,7 @@ body {
   outline: none;
   text-decoration: none;
   font-family: futura;
-  border-radius: 25px;
+  border-radius: 100px;
   transition: background-color .25s;
 }
 
@@ -68,10 +69,10 @@ body {
  }
  .searchPageInput{
    background-color: black;
-   font-size: 5em;
-   width: 14em;
+   font-size: 2.5em;
+   width: 50%;
    height: 2em;
-   border-radius: 100px;
+   border-radius: 500px;
    text-align: center;
    border-style: solid;
    border-color: white;
@@ -79,7 +80,13 @@ body {
    margin: 20px;
    color: white;
    background: transparent;
+   transition: border-color .25s;
+
  }
+.searchPageInput:hover,
+.searchPageInput:active {
+  border-color: #ADD8E6;
+}
 
 
 

@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import { fetchProducts } from '../actions/fetchProducts'
 import { browserHistory, Router, Route, IndexRoute } from 'react-router'
 
 
-class SearchBar extends Component {
+export default class SearchBar extends Component {
 
   constructor(props) {
     super(props)
@@ -13,25 +11,32 @@ class SearchBar extends Component {
     this.state = {search: ""}
 
     this.onInputChange = this.onInputChange.bind(this);
-    this.onFormSubmit = this.onFormSubmit.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   onInputChange(event) {
     this.setState( {search: event.target.value} )
   }
 
-  onFormSubmit(event) {
+  handleClick(event) {
     event.preventDefault();
 
-    this.props.fetchProducts(this.state.search);
+    //this is wear each url will go in the iframe
+    return (
+      <div>
+        <iframe></iframe>
+        <iframe></iframe>
+        <iframe></iframe>
+      </div>
+    )
     this.setState({ search: "" });
-    browserHistory.push('/profile/:id')
+    // browserHistory.push('/profile/:id')
   }
 
   render() {
     return (
       <div className="center">
-           <form onSubmit={this.onFormSubmit}>
+           <form onSubmit={this.handleClick}>
                <input className= "searchPageInput"
                  placeholder="What are you looking for?"
                  value = {this.state.search}
@@ -42,9 +47,3 @@ class SearchBar extends Component {
     )
   };
 }
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators( {fetchProducts}, dispatch)
-}
-
-export default connect(null, mapDispatchToProps)(SearchBar)
