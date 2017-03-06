@@ -6,9 +6,9 @@ export default class Welcome extends Component {
     return (
       <div>
       <p className="welcome">
-        Welcome to Dandy!
+        Fast Fashion
       </p>
-        <a className="ghost-button" href="/search">ENTER SITE</a>
+        <div className="center"><a className="ghost-button" href="/search">ENTER SITE</a></div>
     </div>)
 
     }

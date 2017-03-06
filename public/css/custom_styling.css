@@ -1,6 +1,23 @@
 body {
   background-image: url(../background.jpg);;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: helvetica;
+ }
+
+ iframe {
+   width: 70em;
+   height: 70em;
+ }
+
+ .here {
+   margin: auto;
+   width: 70em;
+   height: 70;
+   background-color: white;
+   border-radius: 25px;
+   border-color: pink;
+   border-width: medium;
  }
 
 .white {
@@ -19,14 +36,16 @@ body {
   font-weight: 300;
   font-family: Lobster;
   text-align: center;
-  font-size: 7em;
+  font-size: 8em;
   margin: 0;
+  padding-bottom: .25em;
   }
 
 
 .ghost-button {
   display: inline-block;
-  width: 200px;
+  width: 250px;
+  height: 30px;
   padding: 8px;
   color: #fff;
   border: 3px solid;
@@ -37,7 +56,9 @@ body {
   font-family: futura;
   border-radius: 25px;
   transition: background-color .25s;
-  margin-left: 42%;
+  font-size: 20px;
+  vertical-align: center;
+  padding-top: 10px;
 }
 
 .ghost-button:hover,

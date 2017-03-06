@@ -11,39 +11,35 @@ export default class SearchBar extends Component {
     this.state = {search: ""}
 
     this.onInputChange = this.onInputChange.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   onInputChange(event) {
     this.setState( {search: event.target.value} )
   }
 
-  handleClick(event) {
-    event.preventDefault();
-
-    //this is wear each url will go in the iframe
-    return (
-      <div>
-        <iframe></iframe>
-        <iframe></iframe>
-        <iframe></iframe>
-      </div>
-    )
-    this.setState({ search: "" });
-    // browserHistory.push('/profile/:id')
+  handleSubmit(event) {
+    event.preventDefault()
+    browserHistory.push("/profile")
   }
 
   render() {
     return (
+
       <div className="center">
-           <form onSubmit={this.handleClick}>
+             <form onSubmit={this.handleSubmit}>
                <input className= "searchPageInput"
                  placeholder="What are you looking for?"
                  value = {this.state.search}
                  onChange = {this.onInputChange} />
-                <p><a className="ghost-search-button" alt="Submit" href="/search">SEARCH</a></p>
+                <p><a className="ghost-search-button" alt="Submit" href="/profile">SEARCH</a></p>
            </form>
        </div>
+
     )
   };
+}
+
+function mapStateToProps({search}) {
+  return {search};
 }

@@ -6,7 +6,7 @@ import ReduxPromise from 'redux-promise'
 import { Router, browserHistory } from 'react-router'
 import routes from './routes'
 
-import App from './containers/app';
+import App from './components/app';
 import rootReducer from './reducers/root_reducer';
 import configureStore from './store/configureStore';
 

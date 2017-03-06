@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import ProductList from './product_list'
+import SearchResults from './search_results'
 import SearchBar from '../components/search_bar'
 
 
@@ -11,11 +11,12 @@ export default class Profile extends Component {
       <div className="row">
       <SearchBar />
         <div className="underSearchBar">
-          <div className="row">
-          <ProductList/>
+          <div className="here">
+              <SearchResults/>
+          </div>
+
           </div>
         </div>
-      </div>
     )
   }
 }
