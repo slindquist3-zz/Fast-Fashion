@@ -18,7 +18,7 @@ constructor(props) {
     var handm = `http://www.hm.com/us/products/search?q=${query}`;
     var nordstrom = `http://shop.nordstrom.com/sr?contextualcategoryid=2375500&origin=keywordsearch&keyword=${query}`
 
-    this.setState({urls:[handm, nordstrom]})
+    this.setState({urls: [handm, nordstrom]})
   }
 
 

@@ -8,7 +8,7 @@ export default class Welcome extends Component {
       <p className="welcome">
         Fast Fashion
       </p>
-        <div className="center"><a className="ghost-button" href="/search">ENTER SITE</a></div>
+        <div className="center"><a className="ghost-button" href="/profile">ENTER SITE</a></div>
     </div>)
 
     }
