@@ -58,7 +58,7 @@ body {
   transition: background-color .25s;
   font-size: 20px;
   vertical-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
 }
 
 .ghost-button:hover,

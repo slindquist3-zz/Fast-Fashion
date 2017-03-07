@@ -1,26 +1,24 @@
 import React, {Component} from 'react';
-import { connect } from 'react-redux'
-import { browserHistory, Router, Route, IndexRoute } from 'react-router'
-
+// import { browserHistory, Router, Route, IndexRoute } from 'react-router'
 
 export default class SearchBar extends Component {
 
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.state = {search: ""}
+    this.state = {term: ""}
 
     this.onInputChange = this.onInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  onInputChange(event) {
-    this.setState( {search: event.target.value} )
+  onInputChange(term) {
+    this.setState({term})
   }
 
   handleSubmit(event) {
     event.preventDefault()
-    browserHistory.push("/profile")
+    this.props.productSearch(this.state.term)
   }
 
   render() {
@@ -28,18 +26,14 @@ export default class SearchBar extends Component {
 
       <div className="center">
              <form onSubmit={this.handleSubmit}>
-               <input className= "searchPageInput"
+               <input className="searchPageInput"
                  placeholder="What are you looking for?"
-                 value = {this.state.search}
-                 onChange = {this.onInputChange} />
+                 value={this.state.term}
+                 onChange={event => this.onInputChange(event.target.value)} />
                 <p><a className="ghost-search-button" alt="Submit" href="/profile">SEARCH</a></p>
            </form>
        </div>
 
     )
   };
-}
-
-function mapStateToProps({search}) {
-  return {search};
 }
