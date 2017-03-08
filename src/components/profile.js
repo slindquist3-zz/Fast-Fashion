@@ -17,8 +17,9 @@ constructor(props) {
     }
     var handm = `http://www.hm.com/us/products/search?q=${query}`;
     var nordstrom = `http://shop.nordstrom.com/sr?contextualcategoryid=2375500&origin=keywordsearch&keyword=${query}`
+    var banana = `http://bananarepublic.gap.com/browse/search.do?searchText=${query}`
 
-    this.setState({urls: [handm, nordstrom]})
+    this.setState({urls: [handm, banana, nordstrom]})
   }
 
 
