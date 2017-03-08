@@ -1,10 +1,10 @@
 import React from 'react'
 import {Route, IndexRoute} from 'react-router'
 
-import App from './components/app'
-import SearchBar from './components/search_bar'
-import Welcome from './components/welcome'
-import Profile from './components/profile'
+import App from './src/components/app'
+import SearchBar from './src/components/search_bar'
+import Welcome from './src/components/welcome'
+import Profile from '.src/components/profile'
 
 
 export default (
