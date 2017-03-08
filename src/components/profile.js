@@ -16,9 +16,10 @@ constructor(props) {
       query = term;
     }
     var handm = `https://www.hm.com/us/products/search?q=${query}`;
-    var uniglo = `https://www.uniqlo.com/us/en/search/?q=${query}&lang=default`
+    var uniglo = `https://www.uniqlo.com/us/en/search/?q=${query}&lang=default`;
+    var express = `http://www.express.com/exp/search?q=${query}`;
 
-    this.setState({urls: [handm, uniglo]})
+    this.setState({urls: [handm, express, uniglo]})
   }
 
 
