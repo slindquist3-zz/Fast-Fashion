@@ -15,9 +15,9 @@ constructor(props) {
     } else {
       query = term;
     }
-    var handm = `http://www.hm.com/us/products/search?q=${query}`;
-    var nordstrom = `http://shop.nordstrom.com/sr?contextualcategoryid=2375500&origin=keywordsearch&keyword=${query}`
-    var banana = `http://bananarepublic.gap.com/browse/search.do?searchText=${query}`
+    var handm = `https://www.hm.com/us/products/search?q=${query}`;
+    var nordstrom = `https://shop.nordstrom.com/sr?contextualcategoryid=2375500&origin=keywordsearch&keyword=${query}`
+    var banana = `https://bananarepublic.gap.com/browse/search.do?searchText=${query}`
 
     this.setState({urls: [handm, banana, nordstrom]})
   }
