@@ -16,9 +16,9 @@ constructor(props) {
       query = term;
     }
     var handm = `https://www.hm.com/us/products/search?q=${query}`;
-    var nordstrom = `https://shop.nordstrom.com/sr?contextualcategoryid=2375500&origin=keywordsearch&keyword=${query}`
+    var uniglo = `https://www.uniqlo.com/us/en/search/?q=${query}&lang=default`
 
-    this.setState({urls: [handm, nordstrom]})
+    this.setState({urls: [handm, uniglo]})
   }
 
 
