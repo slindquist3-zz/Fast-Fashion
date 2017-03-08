@@ -17,8 +17,8 @@ constructor(props) {
     }
     var handm = `https://www.hm.com/us/products/search?q=${query}`;
     var uniglo = `https://www.uniqlo.com/us/en/search/?q=${query}&lang=default`;
-    var forever = `http://www.forever21.com/Product/Category.aspx?br=f21&category=${query}`
-    this.setState({urls: [handm, uniglo, forever]})
+    var bonobos = `https://bonobos.com/shop/accessories/${query}`;
+    this.setState({urls: [handm, uniglo, bonobos]})
   }
 
 
