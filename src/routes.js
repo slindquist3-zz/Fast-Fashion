@@ -5,7 +5,7 @@ import App from './components/app'
 import SearchBar from './components/search_bar'
 import Welcome from './components/welcome'
 import Profile from './components/profile'
-
+//TEST
 
 export default (
     <Route path="/" component={App}>
