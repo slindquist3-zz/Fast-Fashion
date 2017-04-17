@@ -19,7 +19,7 @@ export default class SearchBar extends Component {
     event.preventDefault()
     this.props.productSearch(this.state.term)
   }
-
+//TEST
   render() {
     return (
 
